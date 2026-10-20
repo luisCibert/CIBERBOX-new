@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explora productos de cómputo, comunicaciones, redes y servidores de Technology Ciberbox.">
+  <title>Productos | Technology Ciberbox</title>
+  <link rel="stylesheet" href="../css/productos.css">
+  <script src="../js/productos.js" defer></script>
+</head>
+<body class="cb-productos">
+  <a class="cb-saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="cb-header">
+    <div class="cb-contenedor cb-barra">
+      <a class="cb-marca" href="index.html" aria-label="Technology Ciberbox, inicio">
+        <span class="cb-logo" aria-hidden="true">c<span>↗</span></span>
+        <span><small>TECHNOLOGY</small><strong>CIBERBOX<span>.</span></strong></span>
+      </a>
+      <button class="cb-menu" type="button" aria-controls="navegacion" aria-expanded="false" hidden>
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="cb-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html" aria-current="page">Productos</a>
+        <a href="servicios.html">Servicios y soluciones</a>
+        <a href="cotizacion.html">Cotización</a>
+        <a href="nosotros.html">Nosotros / Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="cb-hero-productos">
+      <div class="cb-contenedor">
+        <p class="cb-etiqueta"><span class="cb-punto"></span> TECNOLOGÍA PARA TU SIGUIENTE PROYECTO</p>
+        <h1>Encuentra el equipo<br>que te hace avanzar.</h1>
+        <p class="cb-intro">Explora soluciones de cómputo, comunicaciones e infraestructura. Cuéntanos qué necesitas y te ayudaremos a encontrar la opción adecuada.</p>
+        <a class="cb-boton cb-boton-oscuro" href="#catalogo">Explorar catálogo <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="cb-contenedor cb-seccion" id="catalogo" aria-labelledby="titulo-catalogo">
+      <div class="cb-cabecera-seccion">
+        <div>
+          <p class="cb-etiqueta">NUESTRO CATÁLOGO</p>
+          <h2 id="titulo-catalogo">Tecnología para cada necesidad.</h2>
+        </div>
+        <p class="cb-intro-catalogo">¿Tienes un requerimiento especial? <a href="cotizacion.html">Solicita una cotización ↗</a></p>
+      </div>
+
+      <div class="cb-controles" hidden>
+        <label class="cb-busqueda">
+          <span class="cb-solo-lector">Buscar productos</span>
+          <span aria-hidden="true">⌕</span>
+          <input id="busqueda-productos" type="search" placeholder="Busca un producto o categoría" autocomplete="off">
+        </label>
+        <div class="cb-filtros" role="group" aria-label="Filtrar productos por categoría">
+          <button class="cb-filtro" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="cb-filtro" type="button" data-filtro="computo" aria-pressed="false">Cómputo</button>
+          <button class="cb-filtro" type="button" data-filtro="comunicacion" aria-pressed="false">Comunicaciones</button>
+          <button class="cb-filtro" type="button" data-filtro="redes" aria-pressed="false">Redes</button>
+          <button class="cb-filtro" type="button" data-filtro="servidores" aria-pressed="false">Servidores</button>
+        </div>
+      </div>
+
+      <p class="cb-resultado" id="resultado-productos" role="status" aria-live="polite"></p>
+      <div class="cb-productos-grid">
+        <article class="cb-tarjeta-producto" data-categoria="computo">
+          <div class="cb-producto-visual cb-visual-verde" aria-hidden="true">
+            <span class="cb-numero">01 / CÓMPUTO</span>
+            <div class="cb-figura cb-figura-laptop"><i></i><b></b></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">CÓMPUTO</p>
+            <h3>Laptops para trabajo y estudio</h3>
+            <p>Equipos portátiles para clases, trabajo profesional y productividad diaria.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=computo&amp;producto=Laptop%20para%20trabajo%20y%20estudio#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="cb-tarjeta-producto" data-categoria="computo">
+          <div class="cb-producto-visual cb-visual-azul" aria-hidden="true">
+            <span class="cb-numero">02 / CÓMPUTO</span>
+            <div class="cb-figura cb-figura-monitor"><i></i><b></b></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">CÓMPUTO</p>
+            <h3>Computadoras de escritorio</h3>
+            <p>Estaciones de trabajo para oficinas, aulas y espacios de atención.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=computo&amp;producto=Computadora%20de%20escritorio#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="cb-tarjeta-producto" data-categoria="comunicacion">
+          <div class="cb-producto-visual cb-visual-lila" aria-hidden="true">
+            <span class="cb-numero">03 / COMUNICACIONES</span>
+            <div class="cb-figura cb-figura-radio"><i></i><b></b><span></span></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">COMUNICACIONES</p>
+            <h3>Radios de comunicación</h3>
+            <p>Comunicación inmediata para equipos de trabajo, operaciones y logística.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=redes&amp;producto=Radios%20de%20comunicaci%C3%B3n#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="cb-tarjeta-producto" data-categoria="redes">
+          <div class="cb-producto-visual cb-visual-azul" aria-hidden="true">
+            <span class="cb-numero">04 / REDES</span>
+            <div class="cb-figura cb-figura-switch"><i></i><i></i><i></i><i></i><b></b></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">REDES</p>
+            <h3>Switches y conectividad</h3>
+            <p>Equipos para conectar dispositivos y organizar la red de tu espacio.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=redes&amp;producto=Switches%20y%20conectividad#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="cb-tarjeta-producto" data-categoria="redes">
+          <div class="cb-producto-visual cb-visual-verde" aria-hidden="true">
+            <span class="cb-numero">05 / REDES</span>
+            <div class="cb-figura cb-figura-router"><i></i><i></i><b></b><span></span></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">REDES</p>
+            <h3>Routers y puntos de acceso</h3>
+            <p>Soluciones inalámbricas para ampliar cobertura y mantenerte conectado.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=redes&amp;producto=Routers%20y%20puntos%20de%20acceso#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="cb-tarjeta-producto" data-categoria="servidores">
+          <div class="cb-producto-visual cb-visual-oscuro" aria-hidden="true">
+            <span class="cb-numero">06 / INFRAESTRUCTURA</span>
+            <div class="cb-figura cb-figura-servidor"><i></i><i></i><i></i></div>
+          </div>
+          <div class="cb-tarjeta-info">
+            <p class="cb-tipo">INFRAESTRUCTURA</p>
+            <h3>Servidores y almacenamiento</h3>
+            <p>Infraestructura para centralizar información y respaldar las operaciones.</p>
+            <a class="cb-enlace cb-link-cotizar" href="cotizacion.html?categoria=servidores&amp;producto=Servidores%20y%20almacenamiento#formulario-cotizacion">Consultar este producto <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+      <p class="cb-sin-resultados" id="sin-resultados" hidden>No encontramos productos con esos criterios. Prueba otra búsqueda o categoría.</p>
+    </section>
+
+    <section class="cb-contenedor cb-cta">
+      <div>
+        <p class="cb-etiqueta">¿NO ENCUENTRAS LO QUE BUSCAS?</p>
+        <h2>Cuéntanos qué necesita tu proyecto.</h2>
+        <p>Preparamos una propuesta según tus equipos, cantidades y requerimientos.</p>
+      </div>
+      <a href="cotizacion.html" class="cb-boton cb-boton-lima">Solicitar cotización <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="cb-contenedor cb-footer">
+    <a class="cb-marca cb-marca-footer" href="index.html">
+      <span><small>TECHNOLOGY</small><strong>CIBERBOX<span>.</span></strong></span>
+    </a>
+    <p>Proyecto académico · Computación e Informática</p>
+    <a class="cb-enlace" href="#contenido">Volver arriba ↑</a>
+  </footer>
+</body>
+</html>

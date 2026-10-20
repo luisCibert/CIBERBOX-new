@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicita una cotización de productos y soluciones tecnológicas en Technology Ciberbox.">
+  <title>Cotización | Technology Ciberbox</title>
+
+  <link rel="stylesheet" href="../css/cotizacion.css">
+  <script src="../js/cotizacion.js" defer></script>
+</head>
+
+<body class="cb-cotizacion">
+
+  <a class="cb-saltar" href="#contenido"></a>
+
+  <!-- HEADER-->
+  <header class="cb-header">
+    <div class="cb-contenedor cb-barra">
+
+      <a class="cb-marca" href="index.html" aria-label="Technology Ciberbox, inicio">
+        <span class="cb-logo" aria-hidden="true">c<span>↗</span></span>
+        <span>
+          <small>TECHNOLOGY</small>
+          <strong>CIBERBOX<span>.</span></strong>
+        </span>
+      </a>
+
+      <button class="cb-menu" type="button"
+        aria-controls="navegacion" aria-expanded="false" hidden>
+        Menú <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="cb-nav" id="navegacion" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="servicios.html">Servicios y soluciones</a>
+        <a href="cotizacion.html" aria-current="page">Cotización</a>
+        <a href="nosotros.html">Nosotros / Contacto</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="contenido">
+
+    <!-- PRESENTACIÓN -->
+    <section class="cb-hero-cotizacion">
+      <div class="cb-contenedor">
+
+        <p class="cb-etiqueta">
+          <span class="cb-punto"></span>
+          COTIZACIONES TECNOLÓGICAS
+        </p>
+
+        <h1>Hagamos realidad<br>tu próximo proyecto.</h1>
+
+        <p class="cb-intro">
+          Cuéntanos qué productos o soluciones tecnológicas necesitas.
+          Nuestro equipo podrá preparar una propuesta de acuerdo con
+          los requerimientos de tu persona o empresa.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- FORMULARIO DE COTIZACIÓN -->
+    <section class="cb-contenedor cb-seccion">
+
+      <div class="cb-cabecera-seccion">
+        <div>
+          <p class="cb-etiqueta">CUÉNTANOS QUÉ NECESITAS</p>
+          <h2>Solicita tu cotización.</h2>
+        </div>
+      </div>
+
+      <form class="cb-formulario" id="formulario-cotizacion">
+
+        <!-- 1. DATOS DEL CLIENTE -->
+        <div class="cb-form-seccion">
+
+          <div class="cb-form-titulo">
+            <span class="cb-form-numero">01</span>
+            <div>
+              <h3>Datos de contacto</h3>
+              <p>Información de la persona o empresa que solicita la cotización.</p>
+            </div>
+          </div>
+
+          <label class="cb-campo">
+            Tipo de cliente *
+            <select id="tipo-cliente" name="tipo-cliente" required>
+              <option value="">Selecciona una opción</option>
+              <option value="persona">Persona natural</option>
+              <option value="empresa">Empresa</option>
+            </select>
+          </label>
+
+          <div class="cb-form-grid">
+
+            <label class="cb-campo">
+              <span id="etiqueta-nombre">Nombre completo *</span>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Escribe tu nombre completo"
+                required
+              >
+            </label>
+
+            <label class="cb-campo">
+              Correo electrónico *
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="correo@ejemplo.com"
+                required
+              >
+            </label>
+
+            <label class="cb-campo">
+              Teléfono de contacto *
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Tu número de contacto"
+                required
+              >
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- 2. REQUERIMIENTO -->
+        <div class="cb-form-seccion">
+
+          <div class="cb-form-titulo">
+            <span class="cb-form-numero">02</span>
+            <div>
+              <h3>Configuración del requerimiento</h3>
+              <p>Indica los productos o servicios que necesitas cotizar.</p>
+            </div>
+          </div>
+
+          <label class="cb-campo">
+            Categoría de interés *
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecciona una categoría</option>
+              <option value="computo">Laptops y Cómputo Corporativo</option>
+              <option value="redes">Redes y Comunicaciones</option>
+              <option value="servidores">Servidores y Almacenamiento</option>
+              <option value="servicios">Servicio Técnico / Solución Empresarial</option>
+            </select>
+          </label>
+
+          <label class="cb-campo">
+            Detalle del pedido *
+            <textarea
+              id="detalle"
+              name="detalle"
+              rows="5"
+              placeholder="Ej.: Necesito 15 laptops Core i7 con 16 GB de RAM..."
+              required
+            ></textarea>
+          </label>
+
+          <label class="cb-campo">
+            Adjuntar archivo (opcional)
+            <span class="cb-ayuda">
+              Puedes adjuntar tu lista de productos o términos de referencia.
+              Formatos permitidos: PDF, XLS y XLSX.
+            </span>
+
+            <input
+              type="file"
+              id="archivo"
+              name="archivo"
+              accept=".pdf,.xls,.xlsx,application/pdf"
+            >
+          </label>
+
+        </div>
+
+
+        <!-- 3. ENVÍO -->
+        <div class="cb-form-seccion cb-form-cierre">
+
+          <div class="cb-form-titulo">
+            <span class="cb-form-numero">03</span>
+            <div>
+              <h3>Enviar solicitud</h3>
+              <p>Revisa tus datos antes de enviar el requerimiento.</p>
+            </div>
+          </div>
+
+          <button type="submit" class="cb-boton cb-boton-oscuro">
+            Solicitar cotización <span aria-hidden="true">↗</span>
+          </button>
+
+          <p
+            class="cb-mensaje-formulario"
+            id="mensaje-formulario"
+            role="status"
+          ></p>
+
+        </div>
+
+      </form>
+
+    </section>
+
+
+    <!-- INFORMACIÓN FINAL -->
+    <section class="cb-contenedor cb-cta">
+      <div>
+        <p class="cb-etiqueta">¿NECESITAS AYUDA?</p>
+        <h2>Estamos para orientarte.</h2>
+        <p>Si tienes dudas sobre nuestros productos o servicios, contáctanos.</p>
+      </div>
+
+      <a href="nosotros.html" class="cb-boton cb-boton-lima">
+        Contáctanos <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER: mismo modelo de Inicio y Servicios -->
+  <footer class="cb-contenedor cb-footer">
+
+    <a class="cb-marca cb-marca-footer" href="index.html">
+      <span>
+        <small>TECHNOLOGY</small>
+        <strong>CIBERBOX<span>.</span></strong>
+      </span>
+    </a>
+
+    <p>Proyecto académico · Computación e Informática</p>
+
+    <a class="cb-enlace" href="#contenido">Volver arriba ↑</a>
+
+  </footer>
+
+</body>
+</html>
